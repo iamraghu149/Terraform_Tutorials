@@ -1,0 +1,11 @@
+#terraform code to launch EC2 instance
+
+resource "aws_instance" "web" {
+  ami = "ami-09298640a92b2d12c"     #Amazon Linux AMI
+  instance_type = "t2.micro"
+  #count = 5
+
+  tags = {
+    Name = "TerraformEC2"
+  }
+}
