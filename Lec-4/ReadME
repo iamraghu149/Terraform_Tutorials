@@ -2,3 +2,7 @@
 
 
 How to Bootstrap EC2 Instance with user data script in Terraform | Terraform 'userdata' examples
+
+
+Refer this official Documentation by Terraform on Userdata:
+https://registry.terraform.io/providers/serverscom/serverscom/latest/docs/guides/user-data
