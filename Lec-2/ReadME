@@ -2,3 +2,22 @@ ReadME
 
 
 To Create an AWS Security group using Terraform and attach to instance | security group tf code
+
+
+# 1st Step need to create EC2 Instance 
+
+
+# 2nd Step create Security Groups
+Define 3 ingress and 1 egress rules and create it
+
+
+3rd Step Need to assign the earlier created Security Group to the EC2 which has created earlier and need to define it under instance_type like.
+security_groups = [aws_security_group.TF_SG.name] the SG name is TF_SG
+
+before that need to check using below commands
+# terraform validate
+# terraform plan
+# terraform apply -auto-approve
+
+
+Thanks
