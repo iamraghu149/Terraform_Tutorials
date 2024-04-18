@@ -9,4 +9,5 @@ https://registry.terraform.io/providers/serverscom/serverscom/latest/docs/guides
 
 
 
-Here I have added script.sh inside ec2.tf file rest all code is same as previous. 
+Here I have added script.sh inside ec2.tf file rest all code is same as previous. Once the run the "terraform apply -auto-approve"
+then copy the Public_IP and paste in the browser "http://234.0.134.145" and you will se the content on web Page. as wewritten in the user-data.
