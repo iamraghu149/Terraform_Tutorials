@@ -6,3 +6,6 @@ Terraform Count Meta Argument and Count Index with example | count vs for_each d
 
 For more information on COUNT Meta Argument, Check out Terraform Official Documentation:
 https://developer.hashicorp.com/terraform/language/meta-arguments/count
+
+
+Here we are going Create more than 1 instances as many as we want including its name as well.
