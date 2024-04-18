@@ -1,7 +1,7 @@
 #terraform code to launch EC2 instance
 
-resource "aws_instance" "web" {
-  ami = "ami-09298640a92b2d12c"     #Amazon Linux AMI
+resource "aws_instance" "Raghu" {
+  ami = "ami-09298640a92b2d12c"        #Amazon Linux AMI
   instance_type = "t2.micro"
   security_groups = [aws_security_group.TF_SG.name]
   #count = 5
@@ -11,10 +11,11 @@ resource "aws_instance" "web" {
   }
 }
 
-#security group using Terraform
+#Security Groups Using Terraform
+
 resource "aws_security_group" "TF_SG" {
-  name = "security group using Terraform"
-  description = "security group using Terraform"
+  name = "security groups using terraform"
+  description = "security groups using terraform"
   vpc_id = "vpc-06a817b193de1d0a5"
 
   ingress {
@@ -44,7 +45,7 @@ resource "aws_security_group" "TF_SG" {
     ipv6_cidr_blocks = ["::/0"]
   }
 
-egress {
+  egress {
     from_port = 0
     to_port = 0
     protocol = "-1"
