@@ -13,7 +13,7 @@ resource "aws_instance" "Raghu" {
   }
 }
 
-#Second method for Key_pair  "Once run the below code then go to Under 1st method one and change the key as demo to "TF_key" and run terraform apply again "
+#Second method for Key_pair  "Once run the below code then go to Under 1st method one and change the key as demo to "TF_key" and run terraform apply again and Once resource has modified then ssh using tfkey"
 
 resource "aws_key_pair" "TF-key" {
   key_name = "TF_key"
