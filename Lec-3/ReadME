@@ -3,3 +3,11 @@
 To Create AWS Keypair using Terraform and attach to EC2 instance | Key to SSH in EC2 server
 
 
+Resource: aws_key_pair:
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/key_pair
+
+tls_private_key:
+https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/private_key
+
+local_file:
+https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file
