@@ -1,1 +1,8 @@
 Update by Raghu ReadME
+
+
+Terraform Count Meta Argument and Count Index with example | count vs for_each demo tutorial
+
+
+For more information on COUNT Meta Argument, Check out Terraform Official Documentation:
+https://developer.hashicorp.com/terraform/language/meta-arguments/count
