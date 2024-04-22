@@ -2,3 +2,6 @@ Update by Raghu ReadME
 
 
 Complete Terraform Course for beginners with Hands-On Practice and Terraform Commands in 10 minutes
+
+
+So here you can define multiple regions as provider and create EC2 Instance using different-2 AMI's with different regions
