@@ -10,4 +10,4 @@ https://developer.hashicorp.com/terraform/language/meta-arguments/count
 
 Here we are going Create more than 1 instances as many as we want including its name as well.
 
-• count. index — The distinct index number (starting with 0 ) corresponding to this instance.
+• count.index — The distinct index number (starting with 0 ) corresponding to this instance.
