@@ -8,3 +8,14 @@ Provisioners can be used to model specific actions on the local machine or on a 
 
 For eg: Installing Packages, Passing Information,
 Running Configuration Management tool etc.
+
+#################################################
+
+Types of Provisioners:
+1. File Provisioner
+2. Local-exec Provisioner
+3. Remote-exec Provisioner
+
+
+Connection Block:
+Most provisioners require access to the remote resource via SSH or WinRM, and expect a nested connection block with details about how to connect.
