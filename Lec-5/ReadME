@@ -3,6 +3,12 @@ Update by Raghu ReadME
 
 Terraform Count Meta Argument and Count Index with example | count vs for_each demo tutorial
 
+#Terraform Count Meta Argument is one of the resource meta arguments that lets you create multiple resources easily.
+
+For more information on COUNT Meta Argument, Check out Terraform Official Documentation:
+https://developer.hashicorp.com/terraform/language/meta-arguments/count
+
+
 
 For more information on COUNT Meta Argument, Check out Terraform Official Documentation:
 https://developer.hashicorp.com/terraform/language/meta-arguments/count
