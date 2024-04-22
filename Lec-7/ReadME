@@ -19,3 +19,16 @@ Types of Provisioners:
 
 Connection Block:
 Most provisioners require access to the remote resource via SSH or WinRM, and expect a nested connection block with details about how to connect.
+
+File Provisioner:
+• File Provisioner is used to copy files or directories from the machine executing Terraform to the newly created resource.
+• The file provisioner supports both ssh and Winrm type of connections.
+
+
+
+
+
+
+
+
+
