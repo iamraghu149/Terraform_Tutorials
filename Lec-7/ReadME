@@ -25,9 +25,14 @@ File Provisioner:
 • The file provisioner supports both ssh and Winrm type of connections.
 
 
+Local-exec Provisioner:
+• The local-exec provisioner invokes a local executable after a resource is created.
+• This invokes a process on the machine running Terraform, not on the resource.
 
 
-
+Remote-exec Provisioner:
+• The remote-exec provisioner invokes a script on a remote resource after it is created.
+• This can be used to run a configuration management tool, bootstrap into a cluster, etc.
 
 
 
