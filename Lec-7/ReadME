@@ -2,3 +2,9 @@ Update by Raghu ReadME
 
 
 Provisioners in Terraform Explained |Terraform Provisioner block: File, Local exec and Remote exec
+
+
+Provisioners can be used to model specific actions on the local machine or on a remote machine in order to prepare servers:
+
+For eg: Installing Packages, Passing Information,
+Running Configuration Management tool etc.
