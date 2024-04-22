@@ -1,1 +1,8 @@
 Update by Raghu ReadME
+
+
+Terraform depends_on Resource Meta Argument | Depends on tutorial with hands on example
+
+
+Depends_on Documentation:
+https://developer.hashicorp.com/terraform/language/meta-arguments/depends_on
