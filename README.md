@@ -178,7 +178,7 @@ This file defines the output values of the resources provisioned. This is useful
 This file is used to define the providers you will be using in your module. You can specify the version and configure provider-specific settings here.
 
 # Example Content:
-main.tf                ---------------------------------------||
+main.tf               
 # Declare provider
 provider "aws" {
   region = var.region
@@ -203,7 +203,7 @@ module "backup" {
 }
 
 
-variables.tf            ---------------------------------------||
+variables.tf            
 variable "region" {
   description = "The AWS region to deploy resources."
   type        = string
@@ -222,7 +222,7 @@ variable "project_name" {
 # Add more variables as needed
 
 
-outputs.tf             ---------------------------------------||
+outputs.tf             
 output "networking_output" {
   value = module.network.network_id
 }
@@ -236,7 +236,7 @@ output "backup_output" {
 }
 
 
-provider.tf            ---------------------------------------||
+provider.tf            
 # Declare provider
 provider "aws" {
   region = var.region
@@ -244,13 +244,13 @@ provider "aws" {
 }
 
 
-security/main.tf       ---------------------------------------||
+security/main.tf       
 resource "aws_security_group" "example" {
   // Security group configuration
 }
 
 
-security/variables.tf  ---------------------------------------||
+security/variables.tf 
 variable "security_group_name" {
   description = "The name of the security group."
   type        = string
@@ -259,13 +259,13 @@ variable "security_group_name" {
 # Add more variables as needed
 
 
-network/main.tf        ---------------------------------------||
+network/main.tf       
 resource "aws_vpc" "example" {
   // VPC configuration
 }
 
 
-network/variables.tf   ---------------------------------------||
+network/variables.tf  
 variable "vpc_cidr_block" {
   description = "The CIDR block for the VPC."
   type        = string
@@ -274,13 +274,13 @@ variable "vpc_cidr_block" {
 # Add more variables as needed
 
 
-backup/main.tf         ---------------------------------------||
+backup/main.tf         
 resource "aws_backup_plan" "example" {
   // Backup plan configuration
 }
 
 
-backup/variables.tf    ---------------------------------------||
+backup/variables.tf    
 variable "backup_plan_name" {
   description = "The name of the backup plan."
   type        = string
@@ -297,7 +297,7 @@ This structure keeps your codebase organized and modular, making it easier to ma
 
 
 
-=========================================================================================================================================||||
+==================================================================================================||||
 
 
 
