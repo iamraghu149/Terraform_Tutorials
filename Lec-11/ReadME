@@ -1,4 +1,14 @@
-ReadME
+Updated by Raghu ReadME
 
 
 How to create S3 bucket using Terraform.
+
+Terraform is an insfrastructure as code tool used to create resources on different providers like AWS, Azure, GCP and other providers. 
+As we are creating S3 bucket in AWS we will be using AWS Provider:
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+
+
+Official Terraform documentation for creating AWS S3 bucket aws_s3_bucket:
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
+
+
