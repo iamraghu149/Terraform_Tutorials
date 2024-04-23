@@ -4,3 +4,6 @@ Update by Raghu ReadME
 How to Create MySQL Database on AWS RDS using Terraform
 
 
+Terraform RDS Documentation:
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_instance
+
