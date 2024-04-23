@@ -1,4 +1,40 @@
-ReadME
+Updated By Raghu ReadME
 
 
 Terraform Remote State Backend using S3 and DynamoDB
+
+Terraform Remote state documentation:
+https://developer.hashicorp.com/terraform/language/settings/backends/s3
+
+S3 resource:
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
+
+Dynamodb resource:
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dynamodb_table
+
+
+
+Terraform stores its state in the file terraform.tfstate in local filesystem. This works well for personal projects, but working with Terraform in a team, use of a local file makes Terraform usage complicated because each user must make sure they always have the latest state data before running Terraform and make sure that nobody else runs Terraform at the same time.
+
+The best way to do this is by running Terraform in a remote environment with shared access to state. Remote state solves those challenges. Remote state is simply storing that state file remotely, rather than on your local filesystem. With a single state file stored remotely, teams can ensure they always have the most up to date state file.
+
+Terraform Remote State Storage Options
+Terraform supports storing state in
+
+Amazon S3
+Azure Blob Storage
+Google Cloud Storage
+Terraform Cloud
+HashiCorp Consul
+
+With Remote state configuration all the state is stored in backends like s3 which is considered as a good practice.
+Benefits of using Terraform Remote State
+Shared Storage: Remote state (Backend) allow each of your team members to access same Terraform state files to manage infrastructure.
+Locking: With fully-featured remote backends, Terraform can lock the state file while changes are being made. This ensures all changes are captured, even if concurrent changes are being attempted against the same state.
+Without locking, if two team members are running Terraform at the same time, you may run into race conditions as multiple Terraform processes make concurrent updates to the state files, leading to conflicts, data loss, and state file corruption.
+Versioning: Some backends support versioning. This maintains versions of your Terraform state files allowing you to download an old version if needed. 
+Encryption: Many backends support encryption of the state file both in transit and at rest.
+Security: A local state file save the content in plain text. It is very common to have secrets or sensitive data in the state, so local state files are insecure
+
+Remote operations: Some backends allow to manage operations remotely (Terraform plan and apply execution). You don’t need to use terraform on your system to apply the changes. You could either trigger it from a Web UI, API call or CLI tool.
+Less Manual Errors: Using a local state file as a shared storage, manually sync the changes could cause someone forget to sync the state file. Remote state will always sync the state automatically whenever it change.
