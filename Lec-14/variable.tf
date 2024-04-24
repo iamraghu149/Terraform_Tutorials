@@ -5,5 +5,6 @@ variable "size" {
 }
 
 output "Privateip" {
-  value = aws_instance.Web.private_ip
+  value = aws_instance.Web[1].private_ip
 }
+
