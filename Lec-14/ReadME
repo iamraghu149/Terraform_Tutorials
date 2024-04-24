@@ -17,6 +17,13 @@ To perform exactly these actions, run the following command to apply:
 $ terraform plan -out plan.txt
 terraform apply "plan.txt"
 
+Links
+Terraform Providers: https://registry.terraform.io/browse/providers
+
+Terraform modules: https://registry.terraform.io/browse/modules
+
+Github repo to learn terraform by Raghu: https://github.com/iamraghu149/hashicorp-certified-terraform-associate
+
 
 
 
