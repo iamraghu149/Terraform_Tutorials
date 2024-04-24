@@ -1,4 +1,4 @@
-ReadME
+Updated By Raghu ReadME
 
 
 Main commands:
@@ -9,7 +9,11 @@ apply         Create or update infrastructure
 destroy       Destroy previously-created infrastructure
 
 
+Saved the plan to: plan.txt
 
+To perform exactly these actions, run the following command to apply:
+$ terraform plan -out plan.txt
+terraform apply "plan.txt"
 
 
 
