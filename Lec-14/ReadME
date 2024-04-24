@@ -18,11 +18,14 @@ $ terraform plan -out plan.txt
 terraform apply "plan.txt"
 
 Links
-Terraform Providers: https://registry.terraform.io/browse/providers
+Terraform Providers: 
+https://registry.terraform.io/browse/providers
 
-Terraform modules: https://registry.terraform.io/browse/modules
+Terraform modules: 
+https://registry.terraform.io/browse/modules
 
-Github repo to learn terraform by Raghu: https://github.com/iamraghu149/hashicorp-certified-terraform-associate
+Github repo to learn terraform by Raghu: 
+https://github.com/iamraghu149/hashicorp-certified-terraform-associate
 
 
 
